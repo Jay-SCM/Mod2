@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <form method="POST" action="http://localhost:3000/"></form>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background-image: url("BG.jpg");
+      }
+    </style>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="form.html">Form</a></li>
+      </ul>
+    </nav>
+    <div class="input-container">
+      <!--class for syling-->
+      <label for="first_name">First Name:</label>
+      <!--lable for fname-->
+      <input
+        type="text"
+        id="first_name"
+        name="first_name"
+        placeholder="Enter your first name"/>
+    </div>
+
+    <div class="input-container">
+      <label for="last_name">Last Name:</label>
+      <input
+        type="text"
+        id="last_name"
+        name="last_name"
+        placeholder="Enter your last name"
+      />
+    </div>
+    <div class="input-container">
+      <label>Interests:</label>
+      <input type="checkbox" id="reading" name="interests" value="reading" />
+      <label for="reading">Reading</label>
+      <input type="checkbox" id="movies" name="interests" value="movies" />
+      <label for="movies">Movies</label>
+      <input type="checkbox" id="sports" name="interests" value="sports" />
+      <label for="sports">Sports</label>
+    </div>
+    <div>
+      <button type="submit">Submit form</button>
+    </div>
+  </body>
+</html>

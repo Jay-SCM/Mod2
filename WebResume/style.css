@@ -1,0 +1,272 @@
+/* Reset  default styles, set font family for the entire document */
+* {
+    margin: 0;  /* To remove default margin */
+    padding: 0; /* To remove default padding */
+    box-sizing: border-box; /* To make sure the box model is set to border-box */
+    list-style: none;   /* To remove default list styles */
+    font-family: 'Roboto', sans-serif;  /* Set font family to Roboto */
+}
+/* background color for the body  padding for spacing */
+body {
+    background-color: #02283b;
+    padding: 2rem; /* padding  ^^ */
+}
+/* Style resume content container */
+.resume-contents {
+    min-height: 100vh;
+    width: auto; /* to fit content */
+    margin: 0 auto; /* Center horizontally */
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns repeat */
+}
+/* Left section of the resume layout */
+.left-section {
+    grid-column: span 2; /* 2 columns span */
+    height: 100%; /* Height of the left section */
+    background: linear-gradient(to left, #0a023d, #02283b); /* awesome Gradient background very impressed with this :) */
+    color: #fff; /* Text color of the gradient background */
+}
+/* Right section of the resume layout */
+.right-section {
+    grid-column: span 5; /* 5 columns span */
+    height: 100%; /* Height of the right section */
+    background-image: linear-gradient(to right, #01121e, #0e2534);
+    color: #adaaaa;     /* Text color of the gradient background */
+}
+/* Style for the contents in left section */
+.left-section-contents {
+    padding: 2rem 2rem;     /* padding for spacing */
+}
+/* Profile section */
+.profile {
+    width: 100%; /* Width of the profile section */
+    border-bottom: 2px solid #575757;   /* border bottom for the profile section */
+}
+/* Profile image */
+.profile .profile-image {
+    width: 100%;    /* Width of the profile image */
+    border-radius: 50%; /* Rounded border for the profile image */
+    border: 8px solid #1B2631;  /* Border color for the profile image */
+}
+/* Name styling */
+.name {
+    color: #D6DBDF; /* Text color for the name */
+    font-size: 30px;    /* Font size for the name */
+    letter-spacing: 2px;    /* Letter spacing for the name */
+    text-transform: uppercase;      /* Text transform for the name */
+    text-align: center;    /* Text align for the name */
+    font-weight: bold;   /* Font weight for the name */
+    padding: 1rem 0;    /* Padding for the name */
+}
+/* Profession styling */
+.profession {
+    color: #F9E79F; /* Text color for the profession */
+    font-size: 20px;    /* Font size for the profession */
+    text-transform: uppercase;  /* Text transform for the profession */
+    text-align: center;   /* Text align for the profession */
+    letter-spacing: 2px;    /* Letter spacing for the profession */
+    font-weight: bold;  /* Font weight for the profession */
+    padding-bottom: 1rem;   /* Padding for the profession */
+}
+/* Styling for section titles in the left section */
+.left-title {
+    color: #D6DBDF;
+    font-size: 20px;    /* Font size for the section titles */
+    letter-spacing: 2px;    /* Letter spacing for the section titles */
+    text-transform: uppercase;      /* Text transform for the section titles */
+    font-weight: bold;
+    display: flex;  /* Display flex for the section titles */
+    align-items: center;    /* Align items for the section titles */
+    padding-top: 3rem;  /* Padding for the section titles */
+}
+/* Styling for contact info and references */
+.contact-info ul li,
+.references ul li {
+    padding: .4rem 0;   /* Padding for contact info and references */
+    display: flex;  /* Display flex for contact info and references */
+    align-items: center;    /* Align items for contact info and references */
+    color: #858383; /* Text color for contact info and references */
+    letter-spacing: 1px;    /* Letter spacing for contact info and references */
+    font-size: 18px;    /* Font size for contact info and references */
+}
+/* Styling for info and references */
+.references ul li  { font-size:
+    font-size: 18px;    /* Font size for icons in contact info and references */
+}
+/* Add a hover effect to contact info and references */
+.contact-info ul li,
+.references ul li {
+    padding: .4rem 0; /* Add hover effect to contact info and references */
+    display: flex;  /* Display flex for contact info and references */
+    align-items: center;    /* Align items for contact info and references */
+    color: #d8dde0; /* Text color for contact info and references */
+    letter-spacing: 1px;    /* Letter spacing for contact info and references */
+    font-size: 18px;    /* Font size for contact info and references */
+    transition: color 0.3s ease; /* Add a smooth transition effect 0.3 */
+}
+/* Change text color on hover */
+.contact-info ul li:hover,
+.references ul li:hover {
+    color: #F9E79F; /* Change the color on hover */
+}
+/* Styling for the skills section */
+.skills ul {
+    padding-top: 1.5rem;    /* Padding for the skills section */
+}
+.skills ul li p {
+    padding: .4rem 0;   /* Padding for the skills section */
+    color: #d8dde0; /* Text color for the skills section */
+    font-size: 18px;    /* Font size for the skills section */
+    letter-spacing: 1px;    /* Letter spacing for the skills section */
+    display: flex;  /* Display flex for the skills section */
+    align-items: center;    /* Align items for the skills section */
+    text-transform: uppercase;  /* Text transform for the skills section */
+}
+/* Styling for reference names */
+.referance-name {
+    padding-top: 1.5rem;    /* Padding for reference names */
+    padding-bottom: .4rem;  /* Padding for reference names */
+    font-size: 18px;    /* Font size for reference names */
+    color: #F9E79F; /* Text color for reference names */
+    letter-spacing: 1px;    /* Letter spacing for reference names */
+    text-transform: uppercase;  /* Text transform for reference names */
+}
+/* Styling for reference professions */
+.referance-profession {
+    font-size: 16px;    /* Font size for reference professions */
+    color: #d8dde0; /* Text color for reference professions */
+    letter-spacing: 1px;    /* Letter spacing for reference professions */
+    padding-bottom: .4rem;  /* Padding for reference professions */
+}
+/* Styling for the right section contents */
+.right-section-contents {
+    padding: 2rem 2rem;
+}
+/* Styling for section titles in the right section */
+.right-title {
+    color: #0e2534; /* Text color for the section titles */
+    font-size: 40px;    /* Font size for the section titles */
+    letter-spacing: 2px;    /* Letter spacing for the section titles */
+    text-transform: uppercase;    /* Text transform for the section titles */
+    font-weight: bold;  /* Font weight for the section titles */
+    display: flex;  /* Display flex for the section titles */
+    align-items: center;    /* Align items for the section titles */
+    padding: 2rem 0;    /* Padding for the section titles */
+    position: relative; /* Position relative for the section titles */
+}
+/* Add hover effect to section titles in the right section */
+.right-title {
+    color: #0e2534; /* Text color for the section titles */
+    font-size: 40px;                /* Font size for the section titles */
+    letter-spacing: 2px;    /* Letter spacing for the section titles */
+    text-transform: uppercase;  /* Text transform for the section titles */
+    font-weight: bold;  /* Font weight for the section titles */
+    display: flex;  /* Display flex for the section titles */
+    align-items: center;    /* Align items for the section titles */
+    padding: 2rem 0;        /* Padding for the section titles */
+    position: relative; /* Position relative for the section titles */
+    transition: color 0.3s ease; /* Add a smooth transition effect */
+}
+/* Change text color on hover */
+.right-title:hover {
+    color: #F9E79F; /* Change the color on hover */
+}
+/* Add padding to create spacing between sections */
+.gap {
+    padding-bottom: 2rem;
+}
+/* Styling for the "About Me" section content */
+.about-me-contents {
+    font-size: 18px;    /* Font size for the "About Me" section content */
+    letter-spacing: 1px;    /* Letter spacing for the "About Me" section content */
+    line-height: 2rem;  /* Line height for the "About Me" section content */
+}
+/* Styling for experience, education, and awards sections */
+.experience-contents,
+.education-contents,
+.awards-contents {
+    display: grid;  /* Display grid for experience, education, and awards sections */
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 2rem;   /* Padding for experience, education, and awards sections */
+}
+/* Styling for company/school names and award/company names */
+.exp-company-name,
+.education-school-name,
+.awards-company-name {
+    font-size: 25px;    /* Font size for company/school names and award/company names */
+    font-weight: bold;  /* Font weight for company/school names and award/company names */
+    text-transform: uppercase;  /* Text transform for company/school names and award/company names */
+    letter-spacing: 1px;    /* Letter spacing for company/school names and award/company names */
+    color: #858383; /* Text color for company/school names and award/company names */
+    padding-bottom: .4rem;  /* Padding for company/school names and award/company names */
+}
+/* Styling for time periods */
+.exp-time-period,
+.educationp-time-period,
+.awards-time-period {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 2rem;
+}
+/* Styling for positions, subjects, and award names */
+.exp-position,
+.education-subject,
+.awards-name {
+    font-size: 25px;
+    font-weight: bold;  /* Font weight for positions, subjects, and award names */
+    text-transform: uppercase;  /* Text transform for positions, subjects, and award names */
+    letter-spacing: 1px;
+    color: #0e2534;
+    padding-bottom: .4rem;  /* Padding for positions, subjects, and award names */
+}
+/* Styling for descriptions in experience, education, and awards sections */
+.exp-desc,
+.education-desc,
+.awards-desc {
+    font-size: 16px;
+    letter-spacing: 1px;    /* Letter spacing for descriptions in experience, education, and awards sections */
+    line-height: 1.5rem;        /* Line height for descriptions in experience, education, and awards sections */
+    border-left: 3px solid #d8dde0; /* Border left for descriptions in experience, education, and awards sections */
+    padding-left: 5px;  /* Padding left for descriptions in experience, education, and awards sections */
+}
+/* Media queries for responsive design */
+@media screen and (max-width: 780px) {
+    .experience-contents,
+    .education-contents,
+    .awards-contents {
+        grid-template-columns: repeat(1, 1fr);  /* 1 column repeat */
+    }
+}
+    /* these took forever!!*/
+@media screen and (max-width: 780px) {  /* media query bp set to 780px */
+    .left-section {
+        grid-column: span 3;    /* 3 columns span */
+    }
+    .right-section {
+        grid-column: span 4;    /* 4 columns span */
+    }
+}
+@media screen and (max-width: 1200px) { /* media query bp set to 1200px */
+    .resume-contents {
+        grid-template-columns: repeat(1, 1fr);  /* 1 column repeat */
+    }
+}
+@media screen and (max-width: 390px) {  /* media query bp set to 390px */
+    .resume-contents {
+        width: 100%;    /* Width of the resume contents */
+        margin: 0 auto; /* Center horizontally */
+    }
+    /* Adjust font sizes for smaller screens */
+    .name {
+        font-size: 20px;    /* Font size for the name */
+    }
+    .profession {
+        font-size: 18px;    /* Font size for the profession */
+    }
+    .left-title {
+        font-size: 18px;    /* Font size for the section titles */
+    }
+    .right-title {  /* Font size for the section titles */
+        font-size: 20px;
+    }
+}
